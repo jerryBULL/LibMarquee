@@ -26,18 +26,18 @@
 
 ### 執行 JS
 ```javascript
-    let marquee01 = marquee("marquee01", {
-        1. state: "start",
-        startPosition: "start",
-        speed: 30,
-        isRepeat: true,
-    });
+let marquee01 = marquee("marquee01", {
+    state: "start",
+    startPosition: "start",
+    speed: 30,
+    isRepeat: true,
+});
 
-    //跑馬燈暫停
-    marquee01.stop();
+//跑馬燈暫停
+marquee01.stop();
 
-    //跑馬燈開始
-    marquee01.Start();
+//跑馬燈開始
+marquee01.Start();
 ```
 # 參數介紹
 ### state - 跑馬燈狀態
