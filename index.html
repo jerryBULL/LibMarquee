@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Marquee Demo</title>
+        <meta name="description" content="">
+
+        <link rel="icon" href="./Content/Image/Favicon/favicon.ico" sizes="any"> <!-- 瀏覽器 icon -->
+        <link rel="shortcut icon" href="./Content/Image/Favicon/favicon.ico" type="image/x-icon"> <!-- 網站在瀏覽器標簽欄和書簽中顯示的圖標 -->
+
+        <!-- Marquee -->
+        <link rel="stylesheet" href="./Content/JS/marquee/marquee.css" />
+        <script src="./Content/JS/marquee/marquee.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./Content/CSS/base.css" />
+        <link rel="stylesheet" href="./Content/CSS/style.css" />
+    </head>
+    <body>
+        <div class="box">
+            <div id="marquee01" class="marquee">
+                <div class="marquee-list_box">
+                    <div class="list_box-list">
+                        <div>marquee01</div>
+                        <div>marquee02</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="marquee02" class="marquee">
+                <div class="marquee-list_box">
+                    <div class="list_box-list">
+                        <div>marquee01</div>
+                        <div>marquee02</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="marquee03" class="marquee">
+                <img class="marquee-img" src="./Content/Image/marquee.png" />
+                <div class="marquee-list_box">
+                    <div class="list_box-list">
+                        <div>marquee01</div>
+                        <div>marquee02</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="marquee04" class="marquee">
+                <img class="marquee-img" src="./Content/Image/marquee.png" />
+                <div class="marquee-list_box">
+                    <div class="list_box-list">
+                        <div>marquee01</div>
+                        <div>marquee02</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            marquee("marquee01", {
+                state: "start",
+                startPosition: "start",
+                speed: 30,
+                isRepeat: false,
+            });
+
+            marquee("marquee02", {
+                state: "start",
+                startPosition: "end",
+                speed: 30,
+                isRepeat: true,
+            });
+
+            marquee("marquee03", {
+                state: "start",
+                startPosition: "start",
+                speed: 30,
+                isRepeat: false,
+            });
+
+            marquee("marquee04", {
+                state: "start",
+                startPosition: "start",
+                speed: 30,
+                isRepeat: true,
+            });
+        </script>
+    </body>
+</html>
