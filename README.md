@@ -1,5 +1,5 @@
 # LibMarquee Github Page
-[Marquee Demo](https://jerrybull.github.io/LibMarquee/ "link")
+[Marquee Demo](https://jerrybull.github.io/LibMarquee/examples/ "link")
 
 # 簡介
 使用純 JS 打造跑馬燈套件。
@@ -8,8 +8,8 @@
 # 用法教學
 ### 引入
 ```html
-<link rel="stylesheet" href="./Content/JS/marquee/marquee.css" />
-<script src="./Content/JS/marquee/marquee.min.js"></script>
+<link rel="stylesheet" href="./marquee.min.css" />
+<script src="./marquee.min.js"></script>
 ```
 
 ### 跑馬燈容器
