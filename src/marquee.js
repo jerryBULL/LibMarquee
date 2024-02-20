@@ -1,6 +1,6 @@
 /**
  * marquee - https://github.com/jerryBULL/LibMarquee
- * version - 1.0.0
+ * version - 1.0.1
  */
 
 (function(){
@@ -80,10 +80,14 @@
         let copyNum = Math.ceil(listBox.offsetWidth / list.offsetWidth) - 1;
         let childrenNum = list.children.length;
 
-        while(copyNum--){
-            for(let j=0; j<childrenNum; j++){
-                list.appendChild(list.children[j].cloneNode(true));
+        if(copyNum !== Infinity && !isNaN(copyNum)){
+            while(copyNum--){
+                for(let j=0; j<childrenNum; j++){
+                    list.appendChild(list.children[j].cloneNode(true));
+                }
             }
+        }else{
+            console.warn('marquee：empty content');
         }
 
         let copyList = list.cloneNode(true);
